@@ -7,7 +7,7 @@ const onSuccess = async (response) => {
   data.append("client_id", "adc691926161c5d0f748");
   data.append("client_secret", "6cb18ec7b1f2e685fb02151ccd5ac880f994e584");
   data.append("code", response.code);
-  data.append("redirect_uri", "http://localhost:3001/");
+  data.append("redirect_uri", "https://heuristic-mayer-47d063.netlify.app/");
 
   // console.log("data payload", response);
   await axios
