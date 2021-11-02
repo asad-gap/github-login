@@ -1,7 +1,6 @@
 import { Link, Route } from "react-router-dom";
 import { LinkedInPopUp } from "react-linkedin-login-oauth2";
 import LinkedInPage from "./linkedIn";
-import GoogleLogin from "./google";
 import GitHubPage from "./github";
 import FaceBookLogin from "./facebook";
 const Navbar = (props) => {
