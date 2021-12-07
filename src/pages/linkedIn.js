@@ -29,7 +29,7 @@ class LinkedInPage extends Component {
       <div>
         <LinkedIn
           clientId="78wv69pelulnl0"
-          redirectUri="http://192.168.18.15:3000/api/social/linkedin/callback"
+          redirectUri="https://backend.codefest.io/api/social/linkedin/callback"
           scope="r_liteprofile%20r_emailaddress"
           state="34232423"
           onFailure={this.handleFailure}

@@ -3,7 +3,7 @@ import React from "react";
 import FacebookLogin from "react-facebook-login";
 
 const onSuccess = async (response) => {
-  const res = await fetch("http://192.168.18.15:3000/api/social/facebook", {
+  const res = await fetch("https://backend.codefest.io/api/social/facebook", {
     method: "POST",
     body: JSON.stringify({
       token: response,

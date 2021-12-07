@@ -7,11 +7,12 @@ const onSuccess = async (response) => {
   data.append("client_id", "adc691926161c5d0f748");
   data.append("client_secret", "6cb18ec7b1f2e685fb02151ccd5ac880f994e584");
   data.append("code", response.code);
-  data.append("redirect_uri", "https://heuristic-mayer-47d063.netlify.app/");
+  data.append("redirect_uri", "http://localhost:3000");
 
   // console.log("data payload", response);
+
   await axios
-    .post(`http://192.168.18.15:3000/api/social/github/callback`, response, {
+    .get(`http://192.168.18.15:3004/api/social/github/callback`, response, {
       headers: {
         "Access-Control-Allow-Origin": "*",
       },
@@ -21,6 +22,7 @@ const onSuccess = async (response) => {
       return data;
     })
     .catch((err) => {
+      console.log("daata in respiose", err);
       return err;
     });
 
